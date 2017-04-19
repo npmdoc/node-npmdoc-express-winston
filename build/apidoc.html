@@ -1,0 +1,403 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/bithavoc/express-winston#readme"
+
+    >express-winston (v2.3.0)</a>
+</h1>
+<h4>express.js middleware for flatiron/winston</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.express-winston">module express-winston</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.express-winston.defaultRequestFilter">
+            function <span class="apidocSignatureSpan">express-winston.</span>defaultRequestFilter
+            <span class="apidocSignatureSpan">(req, propName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.express-winston.defaultResponseFilter">
+            function <span class="apidocSignatureSpan">express-winston.</span>defaultResponseFilter
+            <span class="apidocSignatureSpan">(res, propName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.express-winston.defaultSkip">
+            function <span class="apidocSignatureSpan">express-winston.</span>defaultSkip
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.express-winston.errorLogger">
+            function <span class="apidocSignatureSpan">express-winston.</span>errorLogger
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.express-winston.logger">
+            function <span class="apidocSignatureSpan">express-winston.</span>logger
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">express-winston.</span>bodyBlacklist</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">express-winston.</span>bodyWhitelist</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">express-winston.</span>ignoredRoutes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">express-winston.</span>requestWhitelist</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">express-winston.</span>responseWhitelist</span>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.express-winston" id="apidoc.module.express-winston">module express-winston</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.express-winston.defaultRequestFilter" id="apidoc.element.express-winston.defaultRequestFilter">
+        function <span class="apidocSignatureSpan">express-winston.</span>defaultRequestFilter
+        <span class="apidocSignatureSpan">(req, propName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">defaultRequestFilter = function (req, propName) {
+    return req[propName];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.express-winston.defaultResponseFilter" id="apidoc.element.express-winston.defaultResponseFilter">
+        function <span class="apidocSignatureSpan">express-winston.</span>defaultResponseFilter
+        <span class="apidocSignatureSpan">(res, propName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">defaultResponseFilter = function (res, propName) {
+    return res[propName];
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.express-winston.defaultSkip" id="apidoc.element.express-winston.defaultSkip">
+        function <span class="apidocSignatureSpan">express-winston.</span>defaultSkip
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">defaultSkip = function () {
+  return false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.express-winston.errorLogger" id="apidoc.element.express-winston.errorLogger">
+        function <span class="apidocSignatureSpan">express-winston.</span>errorLogger
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function errorLogger(options) {
+
+    ensureValidOptions(options);
+
+    options.requestWhitelist = options.requestWhitelist || exports.requestWhitelist;
+    options.requestFilter = options.requestFilter || exports.defaultRequestFilter;
+    options.winstonInstance = options.winstonInstance || (new winston.Logger ({ transports: options.transports }));
+    options.msg = options.msg || &#x27;middlewareError&#x27;;
+    options.baseMeta = options.baseMeta || {};
+    options.metaField = options.metaField || null;
+    options.level = options.level || &#x27;error&#x27;;
+    options.dynamicMeta = options.dynamicMeta || function(req, res, err) { return null; };
+
+    // Using mustache style templating
+    var template = _.template(options.msg, {
+      interpolate: /\{\{([\s\S]+?)\}\}/g
+    });
+
+    return function (err, req, res, next) {
+
+        // Let winston gather all the error data.
+        var exceptionMeta = winston.exception.getAllInfo(err);
+        exceptionMeta.req = filterObject(req, options.requestWhitelist, options.requestFilter);
+
+        if(options.dynamicMeta) {
+            var dynamicMeta = options.dynamicMeta(req, res, err);
+            exceptionMeta = _.assign(exceptionMeta, dynamicMeta);
+        }
+
+        if (options.metaField) {
+            var newMeta = {};
+            newMeta[options.metaField] = exceptionMeta;
+            exceptionMeta = newMeta;
+        }
+
+        exceptionMeta = _.assign(exceptionMeta, options.baseMeta);
+
+        // This is fire and forget, we don&#x27;t want logging to hold up the request so don&#x27;t wait for the callback
+        options.winstonInstance.log(options.level, template({err: err, req: req, res: res}), exceptionMeta);
+
+        next(err);
+    };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ignoredRoutes: [String] // Array of paths to ignore/skip logging. Overrides global ignoredRoutes for this instance
+dynamicMeta: function(req, res) { return [Object]; } // Extract additional meta data from request or response (typically req.user
+ data if using passport). meta must be true for this function to be activated
+
+```
+
+### Error Logging
+
+Use `expressWinston.<span class="apidocCodeKeywordSpan">errorLogger</span>(options)` to create a middleware that log the errors
+of the pipeline.
+
+``` js
+var router = require(&#x27;./my-express-router&#x27;);
+
+app.use(router); // notice how the router goes first.
+app.use(expressWinston.errorLogger({
+  transports: [
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.express-winston.logger" id="apidoc.element.express-winston.logger">
+        function <span class="apidocSignatureSpan">express-winston.</span>logger
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function logger(options) {
+
+    ensureValidOptions(options);
+    ensureValidLoggerOptions(options);
+
+    options.requestWhitelist = options.requestWhitelist || exports.requestWhitelist;
+    options.bodyWhitelist = options.bodyWhitelist || exports.bodyWhitelist;
+    options.bodyBlacklist = options.bodyBlacklist || exports.bodyBlacklist;
+    options.responseWhitelist = options.responseWhitelist || exports.responseWhitelist;
+    options.requestFilter = options.requestFilter || exports.defaultRequestFilter;
+    options.responseFilter = options.responseFilter || exports.defaultResponseFilter;
+    options.ignoredRoutes = options.ignoredRoutes || exports.ignoredRoutes;
+    options.winstonInstance = options.winstonInstance || (new winston.Logger ({ transports: options.transports }));
+    options.level = options.level || &#x22;info&#x22;;
+    options.statusLevels = options.statusLevels || false;
+    options.msg = options.msg || &#x22;HTTP {{req.method}} {{req.url}}&#x22;;
+    options.baseMeta = options.baseMeta || {};
+    options.metaField = options.metaField || null;
+    options.colorize = options.colorize || false;
+    options.expressFormat = options.expressFormat || false;
+    options.ignoreRoute = options.ignoreRoute || function () { return false; };
+    options.skip = options.skip || exports.defaultSkip;
+    options.dynamicMeta = options.dynamicMeta || function(req, res) { return null; };
+
+    return function (req, res, next) {
+        var coloredRes = {};
+
+        var currentUrl = req.originalUrl || req.url;
+        if (currentUrl &#x26;&#x26; _.includes(options.ignoredRoutes, currentUrl)) return next();
+        if (options.ignoreRoute(req, res)) return next();
+
+        req._startTime = (new Date);
+
+        req._routeWhitelists = {
+            req: [],
+            res: [],
+            body: []
+        };
+
+        req._routeBlacklists = {
+            body: []
+        };
+
+        // Manage to get information from the response too, just like Connect.logger does:
+        var end = res.end;
+        res.end = function(chunk, encoding) {
+            res.responseTime = (new Date) - req._startTime;
+
+            res.end = end;
+            res.end(chunk, encoding);
+
+            req.url = req.originalUrl || req.url;
+
+            if (options.statusLevels) {
+              if (res.statusCode &#x3e;= 100) { options.level = options.statusLevels.success || &#x22;info&#x22;; }
+              if (res.statusCode &#x3e;= 400) { options.level = options.statusLevels.warn || &#x22;warn&#x22;; }
+              if (res.statusCode &#x3e;= 500) { options.level = options.statusLevels.error || &#x22;error&#x22;; }
+            };
+
+            var meta = {};
+
+            if(options.meta !== false) {
+              var logData = {};
+
+              var requestWhitelist = options.requestWhitelist.concat(req._routeWhitelists.req || []);
+              var responseWhitelist = options.responseWhitelist.concat(req._routeWhitelists.res || []);
+
+              logData.res = res;
+
+              if (_.includes(responseWhitelist, &#x27;body&#x27;)) {
+                if (chunk) {
+                  var isJson = (res._headers &#x26;&#x26; res._headers[&#x27;content-type&#x27;]
+                    &#x26;&#x26; res._headers[&#x27;content-type&#x27;].indexOf(&#x27;json&#x27;) &#x3e;= 0);
+
+                  logData.res.body = bodyToString(chunk, isJson);
+                }
+              }
+
+              logData.req = filterObject(req, requestWhitelist, options.requestFilter);
+              logData.res = filterObject(res, responseWhitelist, options.responseFilter);
+
+              var bodyWhitelist = _.union(options.bodyWhitelist, (req._routeWhitelists.body || []));
+              var blacklist = _.union(options.bodyBlacklist, (req._routeBlacklists.body || []));
+
+              var filteredBody = null;
+
+              if ( req.body !== undefined ) {
+                  if (blacklist.length &#x3e; 0 &#x26;&#x26; bodyWhitelist.length === 0) {
+                    var whitelist = _.difference(Object.keys(req.body), blacklist);
+                    filteredBody = filterObject(req.body, whitelist, options.requestFilter);
+                  } else if (
+                    requestWhitelist.indexOf(&#x27;body&#x27;) !== -1 &#x26;&#x26;
+                    bodyWhitelist. ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+```
+var winston = require(&#x27;winston&#x27;),
+expressWinston = require(&#x27;express-winston&#x27;);
+```
+
+### Request Logging
+
+Use `expressWinston.<span class="apidocCodeKeywordSpan">logger</span>(options)` to create a middleware to log your HTTP requests
+.
+
+``` js
+var router = require(&#x27;./my-express-router&#x27;);
+
+app.use(expressWinston.logger({
+  transports: [
+    new winston.transports.Console({
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
